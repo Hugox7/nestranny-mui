@@ -1,0 +1,98 @@
+#header {
+    height: 75px;
+    box-shadow: 2px 2px 10px lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: white;
+}
+
+#header img {
+    height: 50px;
+}
+
+#links-part {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.deco {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    height: 4px;
+    background-color: #035913;
+}
+
+#links-part a {
+    text-decoration: none;
+    color: black;
+    margin: 0 12px !important;
+    font-size: 17px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#links-part img {
+    height: 25px;
+}
+
+#links-part a:hover {
+    color: #035913;
+}
+
+.item:hover .deco {
+   right: 0;
+   transition: right 0.3s;
+   
+}
+
+.dropdown {
+    cursor: pointer;
+    position: relative;
+}
+
+#menu {
+    position: absolute;
+    width: 220px;
+    left: 0px;
+    bottom: -100px;
+    box-shadow: 0 0 10px lightgray;
+    background-color: white;
+    border-radius: 5px;
+    z-index: 1;
+    display: none;
+}
+
+#menu div {
+    height: 33px;
+    padding: 3px 12px;
+    display: flex;
+    align-items: center;
+}
+
+#menu div:hover {
+    background-color: #f3f3f3;
+}
+
+.ReactStickyHeader_midground {
+    display: none !important;
+}

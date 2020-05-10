@@ -1,0 +1,43 @@
+  #parallax-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.react-parallax-content {
+
+}
+
+#parallax-content h2 {
+    color: darkcyan;
+    font-family: "Questrial", sans-serif;
+    font-weight: 700;
+    /*text-shadow: 1px 0 darkgrey, 0 0.5px darkgrey;*/
+    font-size: 60px;
+    margin-bottom: 1vw;
+}
+
+#parallax-content p {
+    color: black;
+    /*text-shadow: -1px 0 black, 0 1px black;*/
+    margin-top: 30px !important;
+    margin-bottom: 25px !important;
+    font-family: "Questrial", sans-serif;
+    font-size: 27px;
+    margin: 1vw 0vw 1vw 0vw;
+}
+
+#cadre-parallax {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 40px 10px 40px;
+}
+
+#cadre-parallax h2 {
+    text-align: center;
+    margin-top: 12px;
+}
