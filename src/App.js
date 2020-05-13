@@ -39,7 +39,7 @@ class App extends React.Component {
             //border: '2px solid lightgray',
           }}
           buttonStyle={{ 
-            //color: "white", 
+            color: "white", 
             fontSize: "13px", 
             borderRadius: '5px', 
             fontWeight: 'bold', 
