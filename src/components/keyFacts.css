@@ -1,0 +1,51 @@
+#parallax-content2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#key-facts {
+    border-radius: 9px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.6);
+    /* height: 250px; */
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 80px 0;
+    flex-wrap: wrap;
+}
+
+#keyNumbers {
+    
+    font-size: 34px !important;
+    font-family: 'Questrial';
+}
+
+.fact {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 20px;
+}
+
+.fact h5 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.fact p {
+    text-align: center;
+   
+    color: black;
+    /*text-shadow: -1px 0 black, 0 1px black;*/
+    font-family: "Questrial", sans-serif;
+    font-size: 27px;
+    margin: 15px 0px;
+   
+}

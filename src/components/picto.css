@@ -1,0 +1,46 @@
+#picto {
+    background-color: #f3f3f3;
+    padding: 60px 0px;
+}
+
+.picto-line {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.picto-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2.4vw;
+}
+
+.picto-item p {
+    line-height: 1.5;
+    text-align: center;
+    font-size: 18px;
+    color: #383838;
+}
+
+.picto-item h2 {
+    font-family: 'Questrial';
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 10px 0px;
+}
+
+@media screen and (min-width: 1206px) {
+    .picto-item p {
+      max-width: 550px;
+    }
+}
+
+@media screen and (max-width: 1205px) {
+    .picto-item p {
+      max-width: 360px;
+    }
+}
+
