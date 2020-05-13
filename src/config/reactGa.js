@@ -1,6 +1,6 @@
 import reactGA from 'react-ga';
 
-const trackingId = 'UA-143542290-1';
+const trackingId = process.env.REACT_APP_TRACKING_ID;
 
 export const initGA = () => {
     reactGA.initialize(trackingId);
