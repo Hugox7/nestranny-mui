@@ -5,6 +5,7 @@ import Cards from '../components/Cards';
 import Picto from '../components/Picto';
 import KeyFacts from '../components/KeyFacts';
 import About from '../components/About';
+import TimelineComponent from '../components/Timeline';
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
             <Picto />
             <KeyFacts />
             <About />
+            <TimelineComponent />
         </div>
     );
 }

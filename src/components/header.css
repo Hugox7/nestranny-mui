@@ -72,7 +72,7 @@
 
 #menu {
     position: absolute;
-    width: 220px;
+    width: 230px;
     left: 0px;
     bottom: -100px;
     box-shadow: 0 0 10px lightgray;
@@ -87,6 +87,14 @@
     padding: 3px 12px;
     display: flex;
     align-items: center;
+}
+
+#menu a {
+    margin: 0 !important;
+}
+
+#menu a:hover {
+    color: black !important;
 }
 
 #menu div:hover {

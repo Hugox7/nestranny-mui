@@ -6,6 +6,8 @@ import './app.css';
 import { initGA, pageView, anonymize } from './config/reactGa';
 import Header from './components/Header';
 import Home from './pages/Home';
+import Contact from './pages/Contact';
+import Footer from './components/Footer';
 
 class App extends React.Component {
 
@@ -21,7 +23,8 @@ class App extends React.Component {
         <div style={{ height: '75px' }} />
         <Header />
         <Switch>
-          <Route exact to='/' component={Home} />
+          <Route exact path='/' component={Home} />
+          <Route path='/contact' component={Contact} />
         </Switch>
         <CookieConsent
           flipButtons
@@ -34,9 +37,6 @@ class App extends React.Component {
             maxWidth: '350px', 
             margin: '1.5vw', 
             borderRadius: '5px', 
-            //color: 'black', 
-            //boxShadow: '0 0 5px lightgray', 
-            //border: '2px solid lightgray',
           }}
           buttonStyle={{ 
             color: "white", 
@@ -54,6 +54,7 @@ class App extends React.Component {
             <li>Google Analytics</li>
           </ul>
         </CookieConsent>
+        <Footer />
       </div>
     );
   }

@@ -54,17 +54,17 @@ class Header extends React.Component {
                         <a id='dropdown'>Nos missions <ArrowDropDownIcon /></a>
                         <div className='deco' />
                         <div id='menu' ref={node => this.menuRef = node}>
-                            <div>Formations secteur public</div>
-                            <div>Formations secteur privé</div>
-                            <div>Conseil, Etudes et Audits</div>
+                            <div><Link to='/'>Formations secteur public</Link></div>
+                            <div><Link to='/'>Formations secteur privé</Link></div>
+                            <div><Link to='/'>Conseil, Etudes et Audits</Link></div>
                         </div>
                     </div>
                     <div className='item'>
-                        <Link to="/">Nos partenaires</Link>
+                        <Link to="/partenaires">Nos partenaires</Link>
                         <div className='deco' />
                     </div>
                     <div className='item'>
-                        <Link to="/">Contactez-nous</Link>
+                        <Link to="/contact">Contactez-nous</Link>
                         <div className='deco' />
                     </div>
                     <a href='https://twitter.com/NestrannyC' target='_blank' rel="noopener noreferrer">

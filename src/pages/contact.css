@@ -1,0 +1,55 @@
+.MuiInputBase-root, .MuiInputBase-input, .MuiFormControl-root {
+    width: 100% !important;
+}
+
+.MuiInputBase-root {
+    background-color: white;
+}
+
+.label {
+    margin-bottom: 12px;
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+
+.contact-info {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+#contact-card {
+    width: 90%;
+    height: 600px;
+    background-color: white;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    margin: 30px 0;
+    text-align: center;
+}
+
+#contact-card h5 {
+    font-size: 28px;
+    font-family: 'Questrial';
+    margin: 0;
+    font-weight: 200;
+}
+
+#contact-card p {
+    font-size: 17px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}

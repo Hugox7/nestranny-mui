@@ -1,5 +1,4 @@
 import React from 'react';
-import { Timeline, Event } from 'react-timeline-scribble';
 import { Grid } from '@material-ui/core';
 
 import './about.css';
