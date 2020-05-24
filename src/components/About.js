@@ -18,6 +18,9 @@ const About = () => {
                         <div className='hidden'>
                             <p>"Faire de notre expertise de la gestion financière une force pour vous apporter notre savoir-faire."</p>
                             <h5>Stéphane Lefebvre</h5>
+                            <a href='https://www.linkedin.com/in/stephanelefebvre/' target='_blank' rel="noopener noreferrer">
+                                <img src={linkedin} alt='linkedin' />
+                            </a>
                         </div>
                     </div>
                 </Grid>
@@ -27,7 +30,9 @@ const About = () => {
                         <div className='hidden'>
                             <p>"Mettre notre énergie et notre écoute au service d'une pédagogie active pour une gestion opérationnelle immédiate."</p>
                             <h5>Régis Trichard</h5>
-                            <img src={linkedin} alt='linkedin' />
+                            <a href='https://www.linkedin.com/in/r%C3%A9gis-trichard-782b37192/' target='_blank' rel="noopener noreferrer">
+                                <img src={linkedin} alt='linkedin' />
+                            </a>
                         </div>
                     </div>
                 </Grid>
