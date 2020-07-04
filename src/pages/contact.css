@@ -62,6 +62,10 @@
 
   }
 
+  #info-part p {
+    line-height: 1.45;
+  }
+
   .MuiInputBase-input {
     padding: 10px !important;
   }

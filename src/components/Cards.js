@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // Mui //
 import Card from '@material-ui/core/Card';
@@ -30,7 +31,6 @@ const Cards = () => {
                 <CardMedia
                         className={classes.media}
                         image={egalite}
-                        title="Contemplative Reptile"
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="h2">
@@ -42,9 +42,11 @@ const Cards = () => {
                         </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button variant='contained' color="primary">
-                            En savoir plus
-                        </Button>
+                        <Link to='/secteur-public'>
+                            <Button variant='contained' color="primary">
+                                En savoir plus
+                            </Button>
+                        </Link>
                     </CardActions>
                 </Card>
 
@@ -52,7 +54,6 @@ const Cards = () => {
                     <CardMedia
                         className={classes.media}
                         image={business}
-                        title="Contemplative Reptile"
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="h2">
@@ -63,9 +64,11 @@ const Cards = () => {
                         </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button variant='contained' color="secondary">
-                            En savoir plus
-                        </Button>
+                        <Link to='secteur-prive'>
+                            <Button variant='contained' color="secondary">
+                                En savoir plus
+                            </Button>
+                        </Link>  
                     </CardActions>
                 </Card>
 
@@ -73,7 +76,6 @@ const Cards = () => {
                     <CardMedia
                         className={classes.media}
                         image={audit}
-                        title="Contemplative Reptile"
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="h2">
@@ -84,9 +86,11 @@ const Cards = () => {
                         </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button className='orange' variant='contained'>
-                            En savoir plus
-                        </Button>
+                        <Link to='conseil-etudes-et-audits'>
+                            <Button className='orange' variant='contained'>
+                                En savoir plus
+                            </Button>
+                        </Link>
                     </CardActions>
                 </Card>
             </div>

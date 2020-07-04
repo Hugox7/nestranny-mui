@@ -8,6 +8,10 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
+import Partenaires from './pages/Partenaires';
+import Public from './pages/Public';
+import Prive from './pages/Prive';
+import Conseil from './pages/Conseil';
 
 class App extends React.Component {
 
@@ -25,6 +29,10 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route path='/contact' component={Contact} />
+          <Route path='/partenaires' component={Partenaires} />
+          <Route path='/secteur-public' component={Public} />
+          <Route path='/secteur-prive' component={Prive} />
+          <Route path='/conseil-etudes-et-audits' component={Conseil} />
         </Switch>
         <CookieConsent
           flipButtons

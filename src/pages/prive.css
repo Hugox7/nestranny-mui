@@ -1,0 +1,51 @@
+#prive {
+    background-color: #f3f3f3;
+}
+
+#prive-left {
+    min-height: 334px;
+    background-color: darkcyan;
+    padding: 0 4vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+
+#prive-left h2 {
+    font-family: 'Questrial';
+    font-size: 34px;
+    margin: 18px 0;
+    text-align: center;
+}
+
+#prive-left p {
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+#prive-right {
+    height: 334px;
+}
+
+#prive-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-prive h3 {
+    color: darkcyan;
+    font-family: 'Questrial';
+    font-size: 22px;
+}
+
+#separation  {
+    width: 70%;
+    background-color: white;
+    height: 2px;
+}

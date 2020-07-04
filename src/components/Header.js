@@ -16,11 +16,20 @@ class Header extends React.Component {
     }
 
     componentDidMount() {
-        document.addEventListener('mousedown', this.handleClickOutside)
+        document.addEventListener('mousedown', this.handleClickOutside);
+
+        window.onscroll = () => {
+            if (window.pageYOffset === 0) {
+                ReactDOM.findDOMNode(this.headerRef).style.boxShadow='none';
+            }
+            if (window.pageYOffset != 0) {
+                ReactDOM.findDOMNode(this.headerRef).style.boxShadow='2px 2px 5px lightgray';
+            }
+        }
     }
 
     componentWillUnmount() {
-        document.removeEventListener('mousedown', this.handleClickOutside)
+        document.removeEventListener('mousedown', this.handleClickOutside);
     }
 
     componentDidUpdate = (prevProps, prevState) => {
@@ -43,7 +52,7 @@ class Header extends React.Component {
 
     render() {
         return (    
-            <div id='header'>
+            <div ref={node => this.headerRef = node} id='header'>
                 <img src={nestranny} alt='nestranny logo' />
                 <div id='links-part'>
                     <div className='item'>
@@ -54,9 +63,9 @@ class Header extends React.Component {
                         <a id='dropdown'>Nos missions <ArrowDropDownIcon /></a>
                         <div className='deco' />
                         <div id='menu' ref={node => this.menuRef = node}>
-                            <div><Link to='/'>Formations secteur public</Link></div>
-                            <div><Link to='/'>Formations secteur privé</Link></div>
-                            <div><Link to='/'>Conseil, Etudes et Audits</Link></div>
+                            <div><Link to='/secteur-public'>Formations secteur public</Link></div>
+                            <div><Link to='/secteur-prive'>Formations secteur privé</Link></div>
+                            <div><Link to='/conseil-etudes-et-audits'>Conseil, Etudes et Audits</Link></div>
                         </div>
                     </div>
                     <div className='item'>

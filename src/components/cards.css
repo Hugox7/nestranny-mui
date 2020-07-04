@@ -39,3 +39,7 @@
     background-color: #fd7e14 !important;
     color: white !important;
 }
+
+a {
+    text-decoration: none;
+}
